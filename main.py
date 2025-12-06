@@ -28,8 +28,8 @@ def init_db():
     CREATE TABLE IF NOT EXISTS recipes (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         title TEXT NOT NULL,
-        instructions TEXT,
-        ingredients TEXT
+        ingredients TEXT,
+        instructions TEXT
         )
         ''')
     connector.commit()
@@ -41,8 +41,8 @@ init_db()
 # pydantic model -> request validation
 class Recipe(BaseModel):
     title: str
-    instructions: str
     ingredients: str
+    instructions: str
 
 # just returning api title
 @app.get("/")
@@ -89,8 +89,8 @@ def create_recipe(recipe: Recipe):
     connector = get_db()
     cursor = connector.cursor()
     cursor.execute(
-        "INSERT INTO recipes (title, instructions, ingredients) VALUES (?, ?, ?)",
-        (recipe.title, recipe.instructions, recipe.ingredients)
+        "INSERT INTO recipes (title, ingredients, instructions) VALUES (?, ?, ?)",
+        (recipe.title, recipe.ingredients, recipe.instructions)
     )
     connector.commit()
     recipe_id = cursor.lastrowid
