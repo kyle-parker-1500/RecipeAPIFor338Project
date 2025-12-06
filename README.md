@@ -6,7 +6,7 @@ Steps to making this work (for my 338 Final Project team):
    - Once it's successfully installed navigate to its directory using `cd .venv/Scripts`
 4. Type `activate` to activate the virtual environment then cd back to the main directory using `cd ..` until you're there (you can use `ls` to list the files in your current directory if you're using a terminal or `dir` if using cmd on Windows)
    - A little thing should pop up on the left of your current line in the terminal that looks like `(venv)` (or something similar
-   - This means that you're in the virtual machine and can use libraries installed on the VM
+   - This means that you're in the virtual environment and can use libraries installed on the virtual environment
    - Now type in `pip install fastapi uvicorn` and wait for it to install
 5. Now type: `uvicorn main:app --reload` and hold *ctrl+click* to open up the localhost url
 6. In Android Studio: Run your app, then either swipe up and click on the little android at the top of the hovering app->click on app info->then click *uninstall* or long click the app where it shows up in the home screen->click on app info->click on uninstall
