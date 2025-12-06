@@ -1,6 +1,6 @@
 Steps to making this work (for my 338 Final Project team):
 1. Clone the repo
-   - You can use `git clone https://github.com/kyle-parker-1500/RecipeAPIFor338Project.git` (it should, hopefully, work)
+   - You can use `git clone https://github.com/kyle-parker-1500/RecipeAPIFor338Project.git` in a terminal to clone the project (it should, hopefully, work)
 2. Once it's successfully cloned, enter the directory in your terminal/command prompt
 3. `cd .venv/Scripts`
 4. Type `activate` then cd back to the main directory using `cd ..`
