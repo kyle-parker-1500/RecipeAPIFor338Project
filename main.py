@@ -66,7 +66,7 @@ def get_recipes():
     # title
     # ingredients
     # instructions
-    return recipes
+    return {"recipes" : recipes}
 
 @app.get("/recipes/{recipe_id}")
 def get_recipe(recipe_id: int):
