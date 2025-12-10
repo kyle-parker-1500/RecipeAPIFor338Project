@@ -14,3 +14,4 @@ Steps to making this work (for my 338 Final Project team):
    - Make sure you keep the API open and available on your local machine (if you close it, the app won't be able to access the data from it)
 7. When you rerun the project the api database should load (it may take a little bit so give it some time)
    - If it's not working at all let me know
+If it's the Dr. trying to make this work (don't want to mention you by name in case you get mad at me) -> If you can't get a hold of me because I don't check my email just ask the TA :)
